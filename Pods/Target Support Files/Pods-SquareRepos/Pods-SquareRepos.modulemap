@@ -1,0 +1,6 @@
+framework module Pods_SquareRepos {
+  umbrella header "Pods-SquareRepos-umbrella.h"
+
+  export *
+  module * { export * }
+}
