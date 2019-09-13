@@ -9,9 +9,9 @@
 import UIKit
 import MaterialComponents.MaterialTypography
 
-/*
- * Custom Table Cell
- */
+// 
+// Custom Table Cell
+// 
 final class RepoTableViewCell: UITableViewCell {
     private lazy var stackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [

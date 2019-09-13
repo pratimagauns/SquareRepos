@@ -8,12 +8,12 @@ target 'SquareRepos' do
   # Pods for SquareRepos
    pod 'RxSwift'
    pod 'SwiftyJSON'
-   pod 'RxCocoa'
    pod 'MaterialComponents/ActivityIndicator'
    pod 'MaterialComponents/FlexibleHeader'
    pod 'MaterialComponents/AppBar'
    pod 'MaterialComponents/Typography'
    pod 'MaterialComponents/Snackbar'
+   pod 'ReachabilitySwift'
 
   target 'SquareReposTests' do
     inherit! :search_paths

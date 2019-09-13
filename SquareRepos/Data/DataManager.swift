@@ -8,6 +8,10 @@
 
 import Foundation
 
+//
+// Singleton class that forms the Data abstraction.
+// Responsible for providing the data to the UI layer - either from API or persistent storage
+//
 class DataManager {
     let service:Service
     
