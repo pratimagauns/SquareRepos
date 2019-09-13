@@ -8,7 +8,12 @@
 
 import Foundation
 import SwiftyJSON
+import Reachability
 
+//
+// Network Layer
+// Service class that handles the API call and refining the error codes
+//
 protocol Service {
     typealias CompletionHandler = (APIResult)->Void
     func request(from: String, completion: @escaping CompletionHandler)
@@ -35,11 +40,16 @@ struct DataService: Service {
             return
         }
         
+        Reachability()?.whenUnreachable = { _ in
+            completion(APIResult.failure(.connectionError))
+            return
+        }
+        
         let urlSession = URLSession.shared.dataTask(with: url) {
             (data, response, error) in
             if let _ = error {
                 completion(APIResult.failure(.connectionError))
-            }else if let data = data ,let responseCode = response as? HTTPURLResponse {
+            } else if let data = data ,let responseCode = response as? HTTPURLResponse {
                 do {
                     let responseJson = try JSON(data: data)
                     switch responseCode.statusCode {
