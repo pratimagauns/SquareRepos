@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1722AC1308510C58CE0A04D9 /* Pods_SquareReposTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89677C2385885C72746CE638 /* Pods_SquareReposTests.framework */; };
-		3C43C53D232B663800427F40 /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43C53C232B663800427F40 /* MockDataService.swift */; };
-		3C43C53F232B6C1000427F40 /* TestRepoListView.Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43C53E232B6C1000427F40 /* TestRepoListView.Controller.swift */; };
 		3C43C541232B702F00427F40 /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43C540232B702F00427F40 /* MockDataService.swift */; };
 		3C43C543232B707000427F40 /* TestRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43C542232B707000427F40 /* TestRepoViewModel.swift */; };
+		3C43C545232B957D00427F40 /* TestRepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43C544232B957D00427F40 /* TestRepoListViewController.swift */; };
 		3CB97877232A616600716C9D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB97876232A616600716C9D /* HeaderView.swift */; };
 		3CD457752328F0C700DCD193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD457742328F0C700DCD193 /* AppDelegate.swift */; };
 		3CD457772328F0C700DCD193 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD457762328F0C700DCD193 /* RepoListViewController.swift */; };
@@ -48,10 +47,9 @@
 
 /* Begin PBXFileReference section */
 		050A4A7303965498F0D3FF6A /* Pods_SquareReposUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareReposUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C43C53C232B663800427F40 /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
-		3C43C53E232B6C1000427F40 /* TestRepoListView.Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepoListView.Controller.swift; sourceTree = "<group>"; };
 		3C43C540232B702F00427F40 /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
 		3C43C542232B707000427F40 /* TestRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepoViewModel.swift; sourceTree = "<group>"; };
+		3C43C544232B957D00427F40 /* TestRepoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRepoListViewController.swift; sourceTree = "<group>"; };
 		3CB97876232A616600716C9D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3CD457712328F0C700DCD193 /* SquareRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD457742328F0C700DCD193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,10 +168,9 @@
 		3CD457932328F0CA00DCD193 /* SquareReposUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3C43C544232B957D00427F40 /* TestRepoListViewController.swift */,
 				3CD457942328F0CA00DCD193 /* SquareReposUITests.swift */,
 				3CD457962328F0CA00DCD193 /* Info.plist */,
-				3C43C53C232B663800427F40 /* MockDataService.swift */,
-				3C43C53E232B6C1000427F40 /* TestRepoListView.Controller.swift */,
 			);
 			path = SquareReposUITests;
 			sourceTree = "<group>";
@@ -497,9 +494,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C43C545232B957D00427F40 /* TestRepoListViewController.swift in Sources */,
 				3CD457952328F0CA00DCD193 /* SquareReposUITests.swift in Sources */,
-				3C43C53D232B663800427F40 /* MockDataService.swift in Sources */,
-				3C43C53F232B6C1000427F40 /* TestRepoListView.Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
