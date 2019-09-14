@@ -11,10 +11,13 @@ import RxSwift
 import MaterialComponents.MDCAppBar
 import MaterialComponents.MaterialSnackbar
 
+// 
+// View - VC that displays the list data
+// 
 class RepoListViewController: UIViewController {
 
     let cellIdentifier = "RepoTableCell"
-    var viewModel = RepoViewModel()
+    var viewModel = RepoViewModel(dataManager: DataManager.shared)
     let disposeBag = DisposeBag()
     var repositories = [Repository]()
     let appBar = MDCAppBar()

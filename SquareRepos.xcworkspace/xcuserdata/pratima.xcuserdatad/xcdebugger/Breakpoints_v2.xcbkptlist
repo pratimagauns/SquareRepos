@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SquareRepos/UI/ViewModel/RepoViewModel.swift"
-            timestampString = "590040541.794306"
+            filePath = "SquareRepos/Data/DataManager.swift"
+            timestampString = "590046203.151849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "requestData()"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetch(response:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

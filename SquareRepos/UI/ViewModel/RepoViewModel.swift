@@ -9,11 +9,10 @@
 import Foundation
 import RxSwift
 
+//
+// View Model that forms a link between the Repository List VC and the Model
+//
 class RepoViewModel {
-    public enum HomeError {
-        case internetError(String)
-        case serverMessage(String)
-    }
     
     public let repositories : PublishSubject<[Repository]> = PublishSubject()
     public let loading: PublishSubject<Bool> = PublishSubject()
@@ -21,10 +20,16 @@ class RepoViewModel {
     
     private let disposable = DisposeBag()
     
+    var dataManager = DataManager.shared
+    
+    public init(dataManager: DataManager) {
+        self.dataManager = dataManager
+    }
+    
     public func requestData(){
         self.loading.onNext(true)
         
-        DataManager.shared.fetch { (repositories, error)  in
+        dataManager.fetch { (repositories, error)  in
             self.loading.onNext(false)
             if let result = repositories {
                 if result.count > 0 {
@@ -39,7 +44,7 @@ class RepoViewModel {
                 case .connectionError:
                     self.error.onNext(NSLocalizedString("No network Connection.", comment: "Error"))
                 default:
-                    self.error.onNext(NSLocalizedString("Error occurred while fetching data. Please try later", comment: "Error"))
+                    self.error.onNext(NSLocalizedString("Error occurred while fetching data. Please try later.", comment: "Error"))
                 }
             }
         }
