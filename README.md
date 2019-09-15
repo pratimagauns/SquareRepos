@@ -36,6 +36,6 @@ iOS Application that fetches list of Square repositories from, https://api.githu
 Used pods, thus, run ``pod intall`` command to download the dependencies.
 
 
-### Furure improvements:
+### Future improvements:
 1. Can use caching and paging mechanism if the data volume increases to help effective loading of data and better UX
 2. Haven't used any third-party library for dependency injection. If complexity increases can import one.
