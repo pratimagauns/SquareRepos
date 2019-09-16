@@ -38,8 +38,7 @@ class RepoDetailsViewController: BaseViewController {
         webView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         
         setupHeaderView()
-        appBar.navigationBar.hidesBackButton = false
-        appBar.navigationBar.rightBarButtonItem = UIBarButtonItem(title: "Button.title.cacel", style: .plain, target: self, action: #selector(backClicked))
+        appBar.navigationBar.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Button.title.cancel", comment: ""), style: .plain, target: self, action: #selector(backClicked))
         
         appBar.headerViewController.headerView.trackingScrollView = webView.scrollView
         
