@@ -35,6 +35,9 @@ iOS Application that fetches list of Square repositories from, https://api.githu
 
 Used pods, thus, run ``pod intall`` command to download the dependencies.
 
+### Screenshots
+![Cat](https://github.com/pratimagauns/SquareRepos/blob/develop/Screenshot_1.png)
+![Cat](https://github.com/pratimagauns/SquareRepos/blob/develop/Screenshot_2.png)
 
 ### Future improvements:
 1. Can use caching and paging mechanism if the data volume increases to help effective loading of data and better UX
