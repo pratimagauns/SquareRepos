@@ -69,8 +69,8 @@ final class RepoTableViewCell: UITableViewCell {
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
         
         avatarImageView.leadingAnchor.constraint( equalTo: contentView.leadingAnchor, constant: 10).isActive = true
-        avatarImageView.widthAnchor.constraint( equalToConstant: 50).isActive = true
-        avatarImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        avatarImageView.widthAnchor.constraint( equalToConstant: Constants.avatar_size).isActive = true
+        avatarImageView.heightAnchor.constraint(equalToConstant: Constants.avatar_size).isActive = true
         avatarImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
         avatarImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         

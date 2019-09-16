@@ -33,7 +33,7 @@ class TestRepoViewModel: XCTestCase {
             .observeOn(MainScheduler.instance)
             .subscribe({ (result) in
                 expectation.fulfill()
-                XCTAssertNil(result, "Data fetch failure")
+                XCTAssertNotNil(result.element, "Data fetch failure")
                 XCTAssertEqual(result.element![0].name, "html5", "Data fetch failure")
             })
             .disposed(by: disposeBag)

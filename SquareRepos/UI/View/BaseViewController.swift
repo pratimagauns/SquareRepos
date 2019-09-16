@@ -40,8 +40,8 @@ class BaseViewController: UIViewController {
         appBar.headerViewController.didMove(toParent: self)
         let headerView = appBar.headerViewController.headerView
         headerView.backgroundColor = .clear
-        headerView.maximumHeight = HeaderView.Constants.maxHeight
-        headerView.minimumHeight = HeaderView.Constants.minHeight
+        headerView.maximumHeight = Constants.maxHeight
+        headerView.minimumHeight = Constants.minHeight
         
         heroHeaderView.frame = headerView.bounds
         headerView.insertSubview(heroHeaderView, at: 0)

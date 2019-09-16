@@ -13,13 +13,6 @@ import MaterialComponents.MaterialTypography
 // Custom expandable header view
 // 
 class HeaderView: UIView {
-    
-    struct Constants {
-        static let statusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
-        static let minHeight: CGFloat = 44 + statusBarHeight
-        static let maxHeight: CGFloat = 150.0
-    }
-    
     // MARK: Properties
     let backButton: UILabel = {
         let label = UILabel()
@@ -58,7 +51,7 @@ class HeaderView: UIView {
     
     // MARK: View
     func configureView() {
-        backgroundColor = UIColor(red: 26.0/255, green: 141.0/255, blue: 204.0/255, alpha: 1)
+        backgroundColor = Constants.header_color
         addSubview(titleLabel)
     }
     

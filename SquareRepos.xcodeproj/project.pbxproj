@@ -15,7 +15,6 @@
 		3CD4577A2328F0C700DCD193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD457782328F0C700DCD193 /* Main.storyboard */; };
 		3CD4577C2328F0CA00DCD193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD4577B2328F0CA00DCD193 /* Assets.xcassets */; };
 		3CD4577F2328F0CA00DCD193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD4577D2328F0CA00DCD193 /* LaunchScreen.storyboard */; };
-		3CD4578A2328F0CA00DCD193 /* SquareReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD457892328F0CA00DCD193 /* SquareReposTests.swift */; };
 		3CD457952328F0CA00DCD193 /* SquareReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD457942328F0CA00DCD193 /* SquareReposUITests.swift */; };
 		3CD457A52328F9FA00DCD193 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD457A42328F9FA00DCD193 /* DataService.swift */; };
 		3CD457A723291C8E00DCD193 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD457A623291C8E00DCD193 /* DataManager.swift */; };
@@ -29,6 +28,7 @@
 		B33CA8EB232F9395002214E9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8EA232F9395002214E9 /* ImageLoader.swift */; };
 		B33CA8EE232FAE0C002214E9 /* RepoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8ED232FAE0C002214E9 /* RepoDetailsViewController.swift */; };
 		B33CA8F0232FAE54002214E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8EF232FAE54002214E9 /* BaseViewController.swift */; };
+		B3DA1CFD232FF42800193FE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA1CFC232FF42800193FE8 /* Constants.swift */; };
 		CF871F8A312D1D85658E68A4 /* Pods_SquareReposUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050A4A7303965498F0D3FF6A /* Pods_SquareReposUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,6 @@
 		3CD4577E2328F0CA00DCD193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CD457802328F0CA00DCD193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CD457852328F0CA00DCD193 /* SquareReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CD457892328F0CA00DCD193 /* SquareReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareReposTests.swift; sourceTree = "<group>"; };
 		3CD4578B2328F0CA00DCD193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CD457902328F0CA00DCD193 /* SquareReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareReposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD457942328F0CA00DCD193 /* SquareReposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareReposUITests.swift; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		B33CA8EA232F9395002214E9 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		B33CA8ED232FAE0C002214E9 /* RepoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsViewController.swift; sourceTree = "<group>"; };
 		B33CA8EF232FAE54002214E9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B3DA1CFC232FF42800193FE8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B83443CD8826B9F717C369E7 /* Pods-SquareReposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposTests.release.xcconfig"; path = "Target Support Files/Pods-SquareReposTests/Pods-SquareReposTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3A11F336806512614769079 /* Pods-SquareReposUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposUITests.debug.xcconfig"; path = "Target Support Files/Pods-SquareReposUITests/Pods-SquareReposUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D233C450D4ED6DE92568CB11 /* Pods_SquareRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				B33CA8E6232F8594002214E9 /* MockDataService.swift */,
-				3CD457892328F0CA00DCD193 /* SquareReposTests.swift */,
 				3CD4578B2328F0CA00DCD193 /* Info.plist */,
 				3C43C542232B707000427F40 /* TestRepoViewModel.swift */,
 			);
@@ -251,6 +250,7 @@
 		B33CA8EC232F9399002214E9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				B3DA1CFC232FF42800193FE8 /* Constants.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -497,6 +497,7 @@
 				B33CA8E9232F8C19002214E9 /* Owner.swift in Sources */,
 				B33CA8F0232FAE54002214E9 /* BaseViewController.swift in Sources */,
 				B33CA8EB232F9395002214E9 /* ImageLoader.swift in Sources */,
+				B3DA1CFD232FF42800193FE8 /* Constants.swift in Sources */,
 				3CD457772328F0C700DCD193 /* RepoListViewController.swift in Sources */,
 				3CD457752328F0C700DCD193 /* AppDelegate.swift in Sources */,
 				B33CA8EE232FAE0C002214E9 /* RepoDetailsViewController.swift in Sources */,
@@ -509,7 +510,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD4578A2328F0CA00DCD193 /* SquareReposTests.swift in Sources */,
 				3C43C543232B707000427F40 /* TestRepoViewModel.swift in Sources */,
 				B33CA8E7232F8595002214E9 /* MockDataService.swift in Sources */,
 			);

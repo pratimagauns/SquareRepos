@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import SwiftyJSON
+
 @testable import SquareRepos
 
 struct MockDataServiceNoData: Service {
@@ -33,6 +35,7 @@ struct MockDataServiceError: Service {
 struct MockDataService: Service {
     
     func request(from: String, completion: @escaping CompletionHandler) {
-        completion(APIResult.success("[{\"id\":230958,\"name\":\"html5\",\"full_name\":\"square html5\",\"description\":\"A Rails plugin for playing around with HTML5.\"}]"))
+        let string = "[{\"id\":230958,\"name\":\"html5\",\"full_name\":\"square html5\",\"description\":\"A Rails plugin for playing around with HTML5.\"}]"
+        completion(APIResult.success(JSON(string.data(using: .utf8)!)))
     }
 }
