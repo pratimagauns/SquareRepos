@@ -46,10 +46,9 @@ final class RepoTableViewCell: UITableViewCell {
     
     let descriptionLabel: UILabel = {
         let label = UILabel(frame: .zero)
+        label.numberOfLines = 0
         label.textColor = UIColor.gray
         label.font = MDCTypography.body1Font()
-        label.accessibilityActivate()
-        label.numberOfLines = 0
         return label
     }()
     

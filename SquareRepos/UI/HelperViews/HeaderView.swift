@@ -21,11 +21,15 @@ class HeaderView: UIView {
     }
     
     // MARK: Properties
-    let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        return imageView
+    let backButton: UILabel = {
+        let label = UILabel()
+        label.text = NSLocalizedString("Button.title.cacel", comment: "AppIcon")
+        label.textAlignment = .center
+        label.textColor = .white
+        label.shadowOffset = CGSize(width: 1, height: 1)
+        label.shadowColor = .darkGray
+        label.accessibilityActivate()
+        return label
     }()
     
     
@@ -55,13 +59,22 @@ class HeaderView: UIView {
     // MARK: View
     func configureView() {
         backgroundColor = UIColor(red: 26.0/255, green: 141.0/255, blue: 204.0/255, alpha: 1)
-        addSubview(imageView)
         addSubview(titleLabel)
+    }
+    
+    func addBackButton() {
+        addSubview(backButton)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        imageView.frame = bounds
+
+        backButton.frame = CGRect(
+            x: frame.width - 100.0,
+            y: Constants.statusBarHeight,
+            width: 100.0,
+            height: 44.0)
+    
         titleLabel.frame = CGRect(
             x: 0,
             y: Constants.statusBarHeight,

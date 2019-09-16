@@ -27,6 +27,8 @@
 		B33CA8E7232F8595002214E9 /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8E6232F8594002214E9 /* MockDataService.swift */; };
 		B33CA8E9232F8C19002214E9 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8E8232F8C19002214E9 /* Owner.swift */; };
 		B33CA8EB232F9395002214E9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8EA232F9395002214E9 /* ImageLoader.swift */; };
+		B33CA8EE232FAE0C002214E9 /* RepoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8ED232FAE0C002214E9 /* RepoDetailsViewController.swift */; };
+		B33CA8F0232FAE54002214E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8EF232FAE54002214E9 /* BaseViewController.swift */; };
 		CF871F8A312D1D85658E68A4 /* Pods_SquareReposUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050A4A7303965498F0D3FF6A /* Pods_SquareReposUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		B33CA8E6232F8594002214E9 /* MockDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
 		B33CA8E8232F8C19002214E9 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		B33CA8EA232F9395002214E9 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B33CA8ED232FAE0C002214E9 /* RepoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsViewController.swift; sourceTree = "<group>"; };
+		B33CA8EF232FAE54002214E9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B83443CD8826B9F717C369E7 /* Pods-SquareReposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposTests.release.xcconfig"; path = "Target Support Files/Pods-SquareReposTests/Pods-SquareReposTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3A11F336806512614769079 /* Pods-SquareReposUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposUITests.debug.xcconfig"; path = "Target Support Files/Pods-SquareReposUITests/Pods-SquareReposUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D233C450D4ED6DE92568CB11 /* Pods_SquareRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				3CD457762328F0C700DCD193 /* RepoListViewController.swift */,
+				B33CA8ED232FAE0C002214E9 /* RepoDetailsViewController.swift */,
+				B33CA8EF232FAE54002214E9 /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -489,9 +495,11 @@
 				3CD457B1232A058500DCD193 /* RepoViewModel.swift in Sources */,
 				3CD457AA23291D6000DCD193 /* Repository.swift in Sources */,
 				B33CA8E9232F8C19002214E9 /* Owner.swift in Sources */,
+				B33CA8F0232FAE54002214E9 /* BaseViewController.swift in Sources */,
 				B33CA8EB232F9395002214E9 /* ImageLoader.swift in Sources */,
 				3CD457772328F0C700DCD193 /* RepoListViewController.swift in Sources */,
 				3CD457752328F0C700DCD193 /* AppDelegate.swift in Sources */,
+				B33CA8EE232FAE0C002214E9 /* RepoDetailsViewController.swift in Sources */,
 				3CD457AC232A039200DCD193 /* RepoTableViewCell.swift in Sources */,
 				3CB97877232A616600716C9D /* HeaderView.swift in Sources */,
 			);

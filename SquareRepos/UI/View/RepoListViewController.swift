@@ -14,14 +14,12 @@ import MaterialComponents.MaterialSnackbar
 // 
 // View - VC that displays the list data
 // 
-class RepoListViewController: UIViewController {
+class RepoListViewController: BaseViewController {
 
     let cellIdentifier = "RepoTableCell"
     var viewModel = RepoViewModel(dataManager: DataManager.shared)
     let disposeBag = DisposeBag()
     var repositories = [Repository]()
-    let appBar = MDCAppBar()
-    let heroHeaderView = HeaderView()
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
@@ -33,7 +31,6 @@ class RepoListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        tableView.accessibilityActivate()
         tableView.register(RepoTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         return tableView
     }()
@@ -43,16 +40,6 @@ class RepoListViewController: UIViewController {
         activityIndicator.sizeToFit()
         return activityIndicator
     }()
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        addChild(appBar.headerViewController)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        addChild(appBar.headerViewController)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,23 +62,10 @@ class RepoListViewController: UIViewController {
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         
-        appBar.headerViewController.view.frame = view.bounds
-        
-        appBar.navigationBar.backgroundColor = .clear
-        appBar.navigationBar.title = nil
-        view.addSubview(appBar.headerViewController.view)
-        appBar.headerViewController.didMove(toParent: self)
+        setupHeaderView()
+
         appBar.headerViewController.layoutDelegate = self
-        let headerView = appBar.headerViewController.headerView
-        headerView.backgroundColor = .clear
-        headerView.maximumHeight = HeaderView.Constants.maxHeight
-        headerView.minimumHeight = HeaderView.Constants.minHeight
-        
-        heroHeaderView.frame = headerView.bounds
-        headerView.insertSubview(heroHeaderView, at: 0)
-        
         appBar.headerViewController.headerView.trackingScrollView = tableView
-        appBar.addSubviewsToParent()
         
         self.activityIndicator.center = self.view.center;
         self.view.addSubview(self.activityIndicator)
@@ -127,7 +101,6 @@ class RepoListViewController: UIViewController {
                 self.repositories.removeAll()
                 self.repositories.append(contentsOf:result)
                 self.tableView.reloadData()
-                print("Data Fetched")
             })
             .disposed(by: disposeBag)
         
@@ -172,6 +145,14 @@ extension RepoListViewController: UITableViewDelegate {
         let headerView = appBar.headerViewController.headerView
         if scrollView == headerView.trackingScrollView {
             headerView.trackingScrollWillEndDragging(withVelocity: velocity, targetContentOffset: targetContentOffset)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        if let repoDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "RepoDetailsViewController") as? RepoDetailsViewController {
+            repoDetailsViewController.htmlUrl = repositories[indexPath.row].htmlUrl
+            self.present(repoDetailsViewController, animated: true, completion: nil)
         }
     }
 }
