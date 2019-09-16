@@ -29,6 +29,7 @@
 		B33CA8EE232FAE0C002214E9 /* RepoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8ED232FAE0C002214E9 /* RepoDetailsViewController.swift */; };
 		B33CA8F0232FAE54002214E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8EF232FAE54002214E9 /* BaseViewController.swift */; };
 		B3DA1CFD232FF42800193FE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA1CFC232FF42800193FE8 /* Constants.swift */; };
+		B3DA1CFF232FF92A00193FE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B3DA1CFE232FF92900193FE8 /* README.md */; };
 		CF871F8A312D1D85658E68A4 /* Pods_SquareReposUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050A4A7303965498F0D3FF6A /* Pods_SquareReposUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		B33CA8ED232FAE0C002214E9 /* RepoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsViewController.swift; sourceTree = "<group>"; };
 		B33CA8EF232FAE54002214E9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B3DA1CFC232FF42800193FE8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B3DA1CFE232FF92900193FE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B83443CD8826B9F717C369E7 /* Pods-SquareReposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposTests.release.xcconfig"; path = "Target Support Files/Pods-SquareReposTests/Pods-SquareReposTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3A11F336806512614769079 /* Pods-SquareReposUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposUITests.debug.xcconfig"; path = "Target Support Files/Pods-SquareReposUITests/Pods-SquareReposUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D233C450D4ED6DE92568CB11 /* Pods_SquareRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 		3CD457682328F0C700DCD193 = {
 			isa = PBXGroup;
 			children = (
+				B3DA1CFE232FF92900193FE8 /* README.md */,
 				3CD457732328F0C700DCD193 /* SquareRepos */,
 				3CD457882328F0CA00DCD193 /* SquareReposTests */,
 				3CD457932328F0CA00DCD193 /* SquareReposUITests */,
@@ -378,6 +381,7 @@
 			files = (
 				3CD4577F2328F0CA00DCD193 /* LaunchScreen.storyboard in Resources */,
 				B33CA8DF232F5FFE002214E9 /* Localizable.strings in Resources */,
+				B3DA1CFF232FF92A00193FE8 /* README.md in Resources */,
 				3CD4577C2328F0CA00DCD193 /* Assets.xcassets in Resources */,
 				3CD4577A2328F0C700DCD193 /* Main.storyboard in Resources */,
 			);

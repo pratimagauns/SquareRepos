@@ -38,9 +38,8 @@ class RepoDetailsViewController: BaseViewController {
         webView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         
         setupHeaderView()
-        heroHeaderView.addBackButton()
-        let tap = UITapGestureRecognizer(target: self, action: #selector(backClicked))
-        appBar.headerViewController.headerView.addGestureRecognizer(tap)
+        appBar.navigationBar.hidesBackButton = false
+        appBar.navigationBar.rightBarButtonItem = UIBarButtonItem(title: "Button.title.cacel", style: .plain, target: self, action: #selector(backClicked))
         
         appBar.headerViewController.headerView.trackingScrollView = webView.scrollView
         
