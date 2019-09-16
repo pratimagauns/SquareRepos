@@ -31,11 +31,12 @@ class HeaderView: UIView {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = NSLocalizedString("Square Repos", comment: "AppIcon")
+        label.text = NSLocalizedString("List.title", comment: "AppIcon")
         label.textAlignment = .center
         label.textColor = .white
         label.shadowOffset = CGSize(width: 1, height: 1)
         label.shadowColor = .darkGray
+        label.accessibilityActivate()
         return label
     }()
     

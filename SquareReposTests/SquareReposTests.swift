@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import SquareRepos
 
 class SquareReposTests: XCTestCase {
 

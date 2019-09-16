@@ -36,16 +36,31 @@ class RepoViewModel {
                     self.repositories.onNext(result)
                 }
                 else {
-                    self.error.onNext(NSLocalizedString("No records.", comment: "Error"))
+                    self.error.onNext(NSLocalizedString("Error.no_records", comment: "Error"))
                 }
             }
             else if let error = error {
                 switch error {
                 case .connectionError:
-                    self.error.onNext(NSLocalizedString("No network Connection.", comment: "Error"))
+                    self.error.onNext(NSLocalizedString("Error.no.connection", comment: "Error"))
                 default:
-                    self.error.onNext(NSLocalizedString("Error occurred while fetching data. Please try later.", comment: "Error"))
+                    self.error.onNext(NSLocalizedString("Error.service.error", comment: "Error"))
                 }
+            }
+        }
+    }
+    
+    public func requestImage(urlString: String, completion: @escaping (UIImage?)-> Void){
+        guard let url = URL(string: urlString) else {
+            completion(UIImage(named: "Logo")!)
+            return
+        }
+        ImageLoader.shared.rxImage(url: url) { (image) in
+            if let _ = image {
+                completion(image!)
+            }
+            else {
+                completion(UIImage(named: "Logo")!)
             }
         }
     }

@@ -15,10 +15,14 @@ struct Repository: Codable {
     let id: Int
     let name: String
     let description: String?
+    let htmlUrl: String?
+    let owner: Owner?
     
     enum CodingKeys: String, CodingKey {
         case id, name
         case description
+        case owner
+        case htmlUrl = "html_url"
     }
 }
 

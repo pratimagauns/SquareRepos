@@ -33,6 +33,7 @@ class RepoListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
+        tableView.accessibilityActivate()
         tableView.register(RepoTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         return tableView
     }()
