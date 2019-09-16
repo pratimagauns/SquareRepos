@@ -24,6 +24,7 @@ iOS Application that fetches list of Square repositories from, https://api.githu
 
 
 ### The Data flow used can be explained as below: 
+![Cat](https://github.com/pratimagauns/SquareRepos/blob/develop/Clean_architecture.png)
 
 1. UI calls method from ViewModel to request data.
 2. ViewModel calls the respective data repository.
