@@ -62,7 +62,7 @@ class RepoListViewController: BaseViewController {
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         
-        setupHeaderView()
+        setupHeaderView(isExpanded: true)
 
         appBar.headerViewController.layoutDelegate = self
         appBar.headerViewController.headerView.trackingScrollView = tableView
@@ -115,6 +115,7 @@ extension RepoListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: RepoTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RepoTableViewCell
         cell.configure(repo: repositories[indexPath.row])
+        cell.isAccessibilityElement = false
         return cell
     }
 }

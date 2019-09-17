@@ -23,7 +23,6 @@ final class RepoTableViewCell: UITableViewCell {
         view.distribution = .fill
         view.alignment = .leading
         view.spacing = 2
-        view.accessibilityActivate()
         return view
     }()
     
@@ -38,15 +37,14 @@ final class RepoTableViewCell: UITableViewCell {
     
     let titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.numberOfLines = 0
-        label.font = MDCTypography.titleFont()
-        label.accessibilityActivate()
+        label.numberOfLines = 1
+        label.font = MDCTypography.body2Font()
         return label
     }()
     
     let descriptionLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.numberOfLines = 0
+        label.numberOfLines = 2
         label.textColor = UIColor.gray
         label.font = MDCTypography.body1Font()
         return label
@@ -78,6 +76,13 @@ final class RepoTableViewCell: UITableViewCell {
         stackView.trailingAnchor.constraint( equalTo: contentView.trailingAnchor, constant: -20).isActive = true
         stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
         stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
+        
+        
+        contentView.isAccessibilityElement = false
+        stackView.isAccessibilityElement = false
+        descriptionLabel.isAccessibilityElement = true
+        titleLabel.isAccessibilityElement = true
+        avatarImageView.isAccessibilityElement = false
     }
     
     func configure(repo: Repository) {

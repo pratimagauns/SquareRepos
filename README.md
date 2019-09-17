@@ -1,5 +1,6 @@
 # SquareRepos
 iOS Application listing the Square repositories
+Github - https://github.com/pratimagauns/SquareRepos
 
 
 ### Specification:

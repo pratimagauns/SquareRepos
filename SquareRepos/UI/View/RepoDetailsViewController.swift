@@ -30,14 +30,15 @@ class RepoDetailsViewController: BaseViewController {
     func setupView() {
         view.backgroundColor = .white
         view.addSubview(webView)
+        self.webView.scrollView.contentInsetAdjustmentBehavior = .never
         webView.translatesAutoresizingMaskIntoConstraints = false
         
         webView.leadingAnchor.constraint( equalTo: view.leadingAnchor).isActive = true
         webView.trailingAnchor.constraint( equalTo: view.trailingAnchor).isActive = true
         webView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         webView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        
-        setupHeaderView()
+        webView.accessibilityIdentifier = "RepoDetails"
+        setupHeaderView(isExpanded: false)
         appBar.navigationBar.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Button.title.cancel", comment: ""), style: .plain, target: self, action: #selector(backClicked))
         
         appBar.headerViewController.headerView.trackingScrollView = webView.scrollView

@@ -20,9 +20,9 @@ target 'SquareRepos' do
     # Pods for testing
   end
 
-  target 'SquareReposUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+#  target 'SquareReposUITests' do
+#    inherit! :complete
+#    # Pods for testing
+#  end
 
 end

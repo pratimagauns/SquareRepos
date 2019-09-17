@@ -30,7 +30,6 @@
 		B33CA8F0232FAE54002214E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33CA8EF232FAE54002214E9 /* BaseViewController.swift */; };
 		B3DA1CFD232FF42800193FE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA1CFC232FF42800193FE8 /* Constants.swift */; };
 		B3DA1CFF232FF92A00193FE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B3DA1CFE232FF92900193FE8 /* README.md */; };
-		CF871F8A312D1D85658E68A4 /* Pods_SquareReposUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050A4A7303965498F0D3FF6A /* Pods_SquareReposUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		050A4A7303965498F0D3FF6A /* Pods_SquareReposUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareReposUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C43C542232B707000427F40 /* TestRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepoViewModel.swift; sourceTree = "<group>"; };
 		3CB97876232A616600716C9D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3CD457712328F0C700DCD193 /* SquareRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +71,6 @@
 		3CD457B0232A058500DCD193 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
 		40EA2FAD04F4CB75FB3EF8DF /* Pods-SquareRepos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareRepos.release.xcconfig"; path = "Target Support Files/Pods-SquareRepos/Pods-SquareRepos.release.xcconfig"; sourceTree = "<group>"; };
 		6DDBEAC345F22C0F1A322B68 /* Pods-SquareReposTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposTests.debug.xcconfig"; path = "Target Support Files/Pods-SquareReposTests/Pods-SquareReposTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8068AC848B1D8532C4514937 /* Pods-SquareReposUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposUITests.release.xcconfig"; path = "Target Support Files/Pods-SquareReposUITests/Pods-SquareReposUITests.release.xcconfig"; sourceTree = "<group>"; };
 		88B459A3DB8B9C4B86369ADD /* Pods-SquareRepos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareRepos.debug.xcconfig"; path = "Target Support Files/Pods-SquareRepos/Pods-SquareRepos.debug.xcconfig"; sourceTree = "<group>"; };
 		89677C2385885C72746CE638 /* Pods_SquareReposTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareReposTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33CA8E0232F5FFE002214E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -85,7 +82,6 @@
 		B3DA1CFC232FF42800193FE8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B3DA1CFE232FF92900193FE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B83443CD8826B9F717C369E7 /* Pods-SquareReposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposTests.release.xcconfig"; path = "Target Support Files/Pods-SquareReposTests/Pods-SquareReposTests.release.xcconfig"; sourceTree = "<group>"; };
-		C3A11F336806512614769079 /* Pods-SquareReposUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareReposUITests.debug.xcconfig"; path = "Target Support Files/Pods-SquareReposUITests/Pods-SquareReposUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D233C450D4ED6DE92568CB11 /* Pods_SquareRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,7 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF871F8A312D1D85658E68A4 /* Pods_SquareReposUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +240,6 @@
 			children = (
 				D233C450D4ED6DE92568CB11 /* Pods_SquareRepos.framework */,
 				89677C2385885C72746CE638 /* Pods_SquareReposTests.framework */,
-				050A4A7303965498F0D3FF6A /* Pods_SquareReposUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -265,8 +259,6 @@
 				40EA2FAD04F4CB75FB3EF8DF /* Pods-SquareRepos.release.xcconfig */,
 				6DDBEAC345F22C0F1A322B68 /* Pods-SquareReposTests.debug.xcconfig */,
 				B83443CD8826B9F717C369E7 /* Pods-SquareReposTests.release.xcconfig */,
-				C3A11F336806512614769079 /* Pods-SquareReposUITests.debug.xcconfig */,
-				8068AC848B1D8532C4514937 /* Pods-SquareReposUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -316,7 +308,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CD4579F2328F0CA00DCD193 /* Build configuration list for PBXNativeTarget "SquareReposUITests" */;
 			buildPhases = (
-				7175165D120BAA5C3C7955EB /* [CP] Check Pods Manifest.lock */,
 				3CD4578C2328F0CA00DCD193 /* Sources */,
 				3CD4578D2328F0CA00DCD193 /* Frameworks */,
 				3CD4578E2328F0CA00DCD193 /* Resources */,
@@ -465,28 +456,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7175165D120BAA5C3C7955EB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SquareReposUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -621,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -676,7 +645,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -695,7 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V96KXDWVX8;
 				INFOPLIST_FILE = SquareRepos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -717,7 +686,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V96KXDWVX8;
 				INFOPLIST_FILE = SquareRepos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -776,7 +745,6 @@
 		};
 		3CD457A02328F0CA00DCD193 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3A11F336806512614769079 /* Pods-SquareReposUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -797,7 +765,6 @@
 		};
 		3CD457A12328F0CA00DCD193 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8068AC848B1D8532C4514937 /* Pods-SquareReposUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -21,7 +21,6 @@ class HeaderView: UIView {
         label.textColor = .white
         label.shadowOffset = CGSize(width: 1, height: 1)
         label.shadowColor = .darkGray
-        label.accessibilityActivate()
         return label
     }()
     
@@ -33,7 +32,6 @@ class HeaderView: UIView {
         label.textColor = .white
         label.shadowOffset = CGSize(width: 1, height: 1)
         label.shadowColor = .darkGray
-        label.accessibilityActivate()
         return label
     }()
     

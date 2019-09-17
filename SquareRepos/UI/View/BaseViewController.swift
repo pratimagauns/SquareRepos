@@ -29,7 +29,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    func setupHeaderView() {
+    func setupHeaderView(isExpanded: Bool) {
         view.backgroundColor = .white
        
         appBar.headerViewController.view.frame = view.bounds
@@ -40,7 +40,7 @@ class BaseViewController: UIViewController {
         appBar.headerViewController.didMove(toParent: self)
         let headerView = appBar.headerViewController.headerView
         headerView.backgroundColor = .clear
-        headerView.maximumHeight = Constants.maxHeight
+        headerView.maximumHeight = isExpanded ? Constants.maxHeight: Constants.minHeight
         headerView.minimumHeight = Constants.minHeight
         
         heroHeaderView.frame = headerView.bounds
