@@ -1,12 +1,15 @@
 # SquareRepos
 iOS Application listing the Square repositories
+
 Github - https://github.com/pratimagauns/SquareRepos
 
 
 ### Specification:
 
 Xcode 10.3
+
 Swift 5
+
 Development Target - iOS 12.4
 
 
