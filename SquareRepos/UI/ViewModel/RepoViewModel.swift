@@ -8,13 +8,13 @@
 
 import Foundation
 import RxSwift
-
+import RxCocoa
 //
 // View Model that forms a link between the Repository List VC and the Model
 //
 class RepoViewModel {
     
-    public let repositories : PublishSubject<[Repository]> = PublishSubject()
+    public let repositories : BehaviorRelay<[Repository]> = BehaviorRelay(value: [])
     public let loading: PublishSubject<Bool> = PublishSubject()
     public let error : PublishSubject<String> = PublishSubject()
     
@@ -33,7 +33,7 @@ class RepoViewModel {
             self.loading.onNext(false)
             if let result = repositories {
                 if result.count > 0 {
-                    self.repositories.onNext(result)
+                    self.repositories.accept(result)
                 }
                 else {
                     self.error.onNext(NSLocalizedString("Error.no_records", comment: "Error"))

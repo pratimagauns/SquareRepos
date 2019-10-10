@@ -7,6 +7,7 @@ target 'SquareRepos' do
 
   # Pods for SquareRepos
    pod 'RxSwift'
+   pod 'RxCocoa', '5.0.0'
    pod 'SwiftyJSON'
    pod 'MaterialComponents/ActivityIndicator'
    pod 'MaterialComponents/FlexibleHeader'
